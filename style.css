@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&family=Quicksand:wght@700&family=Yuji+Mai&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    overflow: hidden;
+}
+.margintop45{
+    margin-top: 45px;
+}
+.marginbot45{
+    margin-top: -45px;
+}
+.header{
+    z-index: 1020;
+    background-color: rgba(255, 255, 255, 0.744);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.482);
+    align-items: center;
+}
+.nav-btn{
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
+    width: fit-content;
+    transition: .5s;
+}
+.bar,.bars{
+    background-color: black;
+    width: 30px;
+    height: 4px;
+    margin: 6px;
+    border-radius: 2px;
+}
+.plus-h{
+    width: 11%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: black;
+}
+.plus-v{
+    border-radius: 10px;
+    position: absolute;
+    height: 10%;
+    width: 70%;
+    background-color: black;
+}
+.main-heading{
+    font-weight: bold;
+    font-size: 170%;
+}
+.coins-btn img{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav{
+    margin-top: 51px;
+    position: absolute;
+    z-index: 2000;
+    width: 100vw;
+    height: 90.85vh;
+    backdrop-filter: blur(5px);
+    background-color: rgba(138, 255, 125, 0.338);
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.margin-left-120vw{
+    margin-left: -120vw;
+}
+.margin-left-0{
+    margin-left: 0;
+}
+.version-info{
+    font-size: 120%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+    width: 100px;
+    text-align: center;  
+    color: rgba(0, 0, 0, 0.472);  
+}
+.profile-head a{
+    color: black;
+    text-decoration: none;
+}
+.profile,.app-setting,#contact-btnn{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.active{
+    color: blue;
+    font-weight: 900;
+}
+.app-setting span{
+    cursor: pointer;
+}
+.main-nav button{
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+.p-rotate{
+    transform: rotate(45deg);
+    transition: .5s;
+}
+.opacity0{
+    opacity: 0;
+    transition: .5s;
+}
+.n-rotate{
+    transform: rotate(-45deg);
+    margin-top: -20px;
+    transition: .5s;
+}
+.add-btn{
+    cursor: pointer;
+    font-size: 350%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: aqua;
+    width: 15vw;
+    max-width: 70px;
+    min-width: 50px;
+    height: 15vw;
+    max-height: 70px;
+    min-height: 50px;
+    line-height: 0;
+    position: fixed;
+    z-index: 20;
+    bottom: 20px;
+    right: 20px;
+    user-select: none;
+    transition: .5s;
+}
+.rotate0{
+    transform: rotate(0deg);
+    transition: .5s;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.add-new{
+    z-index: 50;
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    bottom: 1%;
+    right: 1%;
+    backdrop-filter: blur(10px);
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(249, 249, 249, 0.382);
+    margin: 10vh 15vw;
+}
+.add-new-heading{
+    font-size: 180%;
+    margin: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+.add-new input
+,.add-new button{
+    width: 90%;
+    height: 30px;
+    border: 1px solid black;
+    margin: 10px 5%;
+    border-radius: 10px;
+}
+.add-new input{
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+.add-new button{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    font-weight: bold;
+}
+.main-search{
+    position: absolute;
+    z-index: 1001;
+    width: 90%;
+    margin: 10px 5%;
+    margin-top: 60px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.333);
+}
+#list{
+    position: absolute;
+    list-style: none;
+    width: 100%;
+}
+#list li{
+    border: 1px solid rgba(0, 0, 0, 0.474);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2px 0;
+}
+#list li a{
+    font-weight: bold;
+    font-size: 140%;
+    border-bottom: 2px solid black;
+}
+#list li p{
+    margin-top: 3px;
+}
+.contacts-container{
+    overflow: auto;
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 95px;
+    padding: 0;
+    height: 81.5vh;
+    position: fixed;
+}
+.contacts-container::-webkit-scrollbar{
+    width: 5px;
+    margin-right:100px;
+}
+.contacts-container::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.512);
+    border-radius: 5px;
+}
+.box{
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
+    width: 90vw;
+    height: 80vh;
+    background-color: rgb(114, 187, 255);
+    border-radius: 20px;
+    border: 1px solid rgb(2, 118, 153);
+    z-index: 9000;
+}
+.set-con-head{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.set-con-head .heading{
+    font-weight: bold;
+}
+.set-cont-body{
+    position: relative;
+    width: 100%;
+    height: 89.5%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* Temporary */
+    display: flex;
+    align-items: flex-end;
+}
+.setting-btns{
+    border-top: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.btn{
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 100%;
+    font-weight: 900;
+}
+.btn:first-child{
+    color: rgb(114, 187, 255);
+}
+.btn:last-child{
+    background: none;
+    color: white;
+}
+.opacity1{
+    opacity: 1;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !Profile.html ########## starts -------- here */
+/* !!!!!!!!!!! YES YES ALSO YES BEGANS FROM HERE */
+/* !Profile.html ########## starts -------- here */
+
+.ch-t-def{
+    margin-right: 10px;
+    padding: 3px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    transition: .5s;
+    padding-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.ch-t-def::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    margin: 18px 0 0 2px;
+    transition: 1s;
+}
+.ch-t-def:hover{
+    border: 1.5px solid transparent;
+    background-color: rgba(0, 0, 0, 0.506);
+    color: white;
+}
+.ch-t-def:hover::before{
+    width: 43px;
+    background-color: white;
+}
+.fieldset{
+    position: fixed;
+    overflow: auto;
+    width: 92%;
+    max-height: 90vh;
+    margin: 0 4%;
+    margin-top: 55px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+}
+.heading{
+    font-size: 150%;
+}
+.fieldset p{
+    font-size: 120%;
+    color: rgb(50, 50, 50);
+    margin: 5px;
+}
+.fieldset input{
+    padding-left: 10px;
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.215);
+}
+.fieldset input:active{
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.215);
+}
+.fieldset button{
+    padding: 2px;
+    border-radius: 5px;
+    border-width: 1.5px;
+    margin: 10px;
+    font-size: 100%;
+    cursor: pointer;
+}
+.save-btn{
+    display: block;
+    border-color: transparent;
+    background: rgba(0, 0, 0, 0.442);
+    color: rgb(255, 255, 255);
+}
+.lock-btn,.btn{
+    border-style: solid;
+    transition: .5s;
+    border-color: rgb(243, 242, 242);
+    background-color: rgb(244, 243, 243);
+}
+#bb{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.bars{
+    width: 20px;
+    position: fixed;
+}
+.bar11{
+    margin-top: -5px;
+}
+.bar22{
+    position: fixed;
+    margin-top: -12px;
+    margin-left: 6.9px;
+}
+.nav-bttn{
+    margin-top: 20px;
+}

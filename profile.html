@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body{
+            animation: body 1s;
+        }
+        @keyframes body {
+            0%,50%{
+                margin-left: 150vw;
+            }
+            100%{
+                margin-left: 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav-btn nav-bttn" id="nav-btn">
+            <div class="bars bar11 p-rotate" id="bar1"></div>
+            <div class="bar bar22" id="bar2"></div>
+            <div class="bars n-rotate" id="bar3"></div>
+        </div>
+        <div class="main-heading">
+            Contacts
+        </div>
+        <div class="ch-t-def" accesskey="r">
+            Reset
+        </div>
+    </div>
+
+        <fieldset class="fieldset">
+        <legend class="heading">User Profile</legend>
+        <form>
+        <p>Your Name</p>
+        <input type="text" name="name" id="in-na">
+        <p>Your Phone Number</p>
+        <input type="number" name="number" id="in-ph">
+        <p>Your Email</p>
+        <input type="email" name="email" id="in-em">
+        <p>Your Age</p>
+        <input type="number" name="age" id="in-ag">
+        <button class="save-btn" onclick="alert('It is under development!');">Save</button>
+        <button class="lock-btn" onclick="alert('It is under development!');">Set Password</button>
+            </form>
+
+            </fieldset>
+
+    </div>
+
+    <script src="setting.js"></script>
+</body>
+</html>

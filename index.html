@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="name()">
+    <div class="header">
+        <div class="nav-btn" id="nav-btn">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+        <div class="main-heading">
+            Contacts
+        </div>
+        <div class="coins-btn" id="deletebtn">
+            <img src="delete.png" alt="">
+        </div>
+    </div>
+    <nav class="main-nav margin-left-120vw" id="main-nav">
+        <div class="profile">
+            <div class="profile-head" id="prof-btn"><a href="profile.html"> Your Profile</a></div>
+        </div>
+        <div class="app-setting" id="setting-btn">
+            <span> App Settings</span>
+        </div>
+        <div class="version-info">v 1.21</div>
+
+    </nav>
+    <div class="block" id="contacts">
+    <div class="add-btn rotate0" id="add-btn">
+        <div class="plus-h"></div>
+        <div class="plus-v"></div>
+    </div>
+    <form class="add-new none" id="add-new">
+        <p class="add-new-heading">New Contact</p>
+        <input type="text" name="name" placeholder="Full name here" id="Contact-Name">
+        <input type="number" name="number" placeholder="Number here" id="Contact-Number">
+        <button>Create Contact</button>
+    </form>
+    <input type="text" class="main-search" name="Search" placeholder="Search contacts" id="search-input" onkeyup="searchcontacts()">
+    <div class="contacts-container">
+    <ul id="list">
+        <!-- <li id="li"><a>haseeb</a>
+        <p>0335</p></li>
+        <li id="li"><a>bilal</a>
+            <p>0335</p></li> -->
+    </ul> 
+    </div>
+    </div>
+
+    
+    <fieldset class="none" id="fieldset">
+        <legend class="heading">User Profile</legend>
+        <form>
+        <p>Your Name</p>
+        <input type="text" name="name" id="in-na">
+        <p>Your Phone Number</p>
+        <input type="number" name="number" id="in-ph">
+        <p>Your Email</p>
+        <input type="email" name="email" id="in-em">
+        <p>Your Age</p>
+        <input type="number" name="age" id="in-ag">
+        <button class="save-btn" onclick="alert('It is under development!');">Save</button>
+        <button class="lock-btn" onclick="alert('It is under development!');">Set Password</button>
+            </form>
+            </fieldset>
+
+    <div class="none" id="setting-cont">
+        <header class="set-con-head"><div class="heading">Settings</div></header>
+        <div class="set-cont-body">
+        <div class="setting-btns">
+        <button class="btn" id="save">Done</button>
+        <button class="btn" id="cancel">Cancel</button>
+        </div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
